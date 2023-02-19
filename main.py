@@ -36,8 +36,6 @@ def main():
         with open(files,"r") as file:
             text=file.read()
             print(find_mismatch(text))
-    else:
-        print("Incorrect")
 
 if __name__ == "__main__":
     main()
