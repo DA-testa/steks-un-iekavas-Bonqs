@@ -28,7 +28,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text.upper() == "I ":
+    if text.upper() == "":
         text=input()
         print(find_mismatch(text))
     elif text.upper() == "F ":
