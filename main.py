@@ -27,15 +27,17 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
-    if text.upper() == "":
+    text = input("Input F/I")
+    if text.upper() == "I":
         text=input()
         print(find_mismatch(text))
-    elif text.upper() == "F ":
-        files=input()
+    elif text.upper() == "F":
+        files=input("Input File")
         with open(files,"r") as file:
             text=file.read()
             print(find_mismatch(text))
+    else:
+        print("Incorrect")
 
 if __name__ == "__main__":
     main()
